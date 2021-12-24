@@ -9,6 +9,3 @@ using Spotipy and python 3
 
 ## Run
 run all functions using main.py, after the authentications
-
-### to make playlist from liked songs
-use makeLikedSongsPlaylist function

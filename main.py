@@ -5,6 +5,7 @@ import spotipy.util as util
 # from os import path
 
 from makeLikedSongsPlaylist import makeLikedSongsPlaylist
+from makeFeaturePlaylist import makeFeaturePlaylist
 
 # authenticate
 authentication=SpotifyOAuth(scope=constants.SPOTIPY_SCOPE, client_id=constants.SPOTIPY_CLIENT_ID, 
@@ -12,6 +13,7 @@ authentication=SpotifyOAuth(scope=constants.SPOTIPY_SCOPE, client_id=constants.S
 sp = spotipy.Spotify(auth_manager=authentication)
 
 # makeLikedSongsPlaylist(sp)
+makeFeaturePlaylist(sp)
 print('FINISHED')
 
 
